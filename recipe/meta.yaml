@@ -16,12 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
-    - setuptools >=45
+    - python 3.7
+    - numpy 1.7
+    - setuptools 45
     - wheel
     - pip
   run:
     - python >=3.7
+    - numpy >=1.7
 
 test:
   imports:
