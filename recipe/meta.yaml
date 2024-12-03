@@ -16,11 +16,12 @@ build:
 
 requirements:
   host:
-    - python 3.6
+    - python 3.7
+    - setuptools 45
+    - wheel
     - pip
-    - setuptools
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy >=1.7
 
 test:
@@ -29,7 +30,7 @@ test:
   commands:
     - pip check
   requires:
-    - python 3.6
+    - python 3.7
     - pip
 
 about:
