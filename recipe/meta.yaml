@@ -20,7 +20,7 @@ requirements:
     - numpy 1.16.0
     - setuptools 45
     - wheel
-    - pip
+    - pip >=24.0
   run:
     - python >=3.7
     - numpy >=1.16.0
@@ -31,7 +31,7 @@ test:
   commands:
     - pip check
   requires:
-    - pip
+    - pip >=24.0
 
 about:
   home: http://pypi.python.org/pypi/tmm
