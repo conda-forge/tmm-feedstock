@@ -16,7 +16,7 @@ build:
 
 requirements:
   build:
-    - pip >= 24.0 
+    - pip >=24.0 
   host:
     - python 3.7
     - numpy 1.16.0
