@@ -19,10 +19,10 @@ requirements:
     - pip >=24.0 
   host:
     - python 3.10
-    - setuptools 45
+    - pip >=24.0
+    - setuptools
     - numpy
     - wheel
-    - pip >=24.0
   run:
     - python >=3.10
     - numpy >=1.26
