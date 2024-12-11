@@ -19,8 +19,8 @@ requirements:
     - pip >=24.0 
   host:
     - python 3.8
-    - numpy 1.26
     - setuptools 45
+    - numpy
     - wheel
     - pip >=24.0
   run:
