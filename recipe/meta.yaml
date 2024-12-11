@@ -18,13 +18,13 @@ requirements:
   build:
     - pip >=24.0 
   host:
-    - python 3.8
+    - python 3.10
     - setuptools 45
     - numpy
     - wheel
     - pip >=24.0
   run:
-    - python >=3.8
+    - python >=3.10
     - numpy >=1.26
 
 test:
@@ -33,7 +33,7 @@ test:
   commands:
     - pip check
   requires:
-    - python 3.8
+    - python 3.10
     - pip >=24.0
 
 about:
