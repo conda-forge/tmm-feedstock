@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "tmm" %}
 {% set version = "0.2.0" %}
 
@@ -12,19 +13,19 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
     - pip >=24.0 
   host:
-    - python 3.10
+    - python {{ python_min }}
     - pip >=24.0
     - setuptools
     - numpy
     - wheel
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - numpy >=1.26
 
 test:
@@ -33,7 +34,7 @@ test:
   commands:
     - pip check
   requires:
-    - python 3.10
+    - python {{ python_min }}
     - pip >=24.0
 
 about:
